@@ -2,4 +2,4 @@
 
 set "SCRIPT_DIR=%~dp0"
 
-python "%SCRIPT_DIR%foldercontent.py" "%~1"
+python "%SCRIPT_DIR%projectcontent.py" "%~1"

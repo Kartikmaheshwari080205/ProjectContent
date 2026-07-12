@@ -140,7 +140,7 @@ Binary files are automatically ignored.
 
 ```text
 ProjectContent/
-├── foldercontent.py
+├── projectcontent.py
 ├── generate_context.bat
 ├── install.bat
 ├── uninstall.bat
