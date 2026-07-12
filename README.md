@@ -40,7 +40,7 @@ Supported languages include:
 
 ## Why?
 
-When working with LLMs, providing the entire project as context often produces significantly better responses than sharing individual files.
+When working with LLMs, providing an entire project as context often produces significantly better responses than sharing individual files.
 
 ProjectContent automates this process by generating a single text file containing the complete project, ready to paste into an LLM or upload as a file.
 
@@ -67,13 +67,27 @@ pip install pyperclip
 
    `C:\Tools\ProjectContent`
 
-3. Open `generate_context.bat` and update the path to `foldercontent.py` if necessary.
+3. Run:
 
-4. Open `AddContextMenu.reg` and update the path to `generate_context.bat` if necessary.
+   ```text
+   install.bat
+   ```
 
-5. Double-click `AddContextMenu.reg` and accept the Windows prompts.
+The installer automatically:
 
-The `Generate Project Content` option will now appear when right-clicking any folder.
+* Registers the Windows context menu.
+* Detects the installation directory automatically.
+* Configures everything required to use ProjectContent.
+
+---
+
+## Uninstallation
+
+To remove ProjectContent from the Windows context menu, simply run:
+
+```text
+uninstall.bat
+```
 
 ---
 
@@ -128,7 +142,8 @@ Binary files are automatically ignored.
 ProjectContent/
 ├── foldercontent.py
 ├── generate_context.bat
-├── AddContextMenu.reg
+├── install.bat
+├── uninstall.bat
 └── README.md
 ```
 
